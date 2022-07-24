@@ -1,5 +1,5 @@
 module.exports = {
-    mode: "production",
+    mode: "development",
     output: {
         filename: "[name].[hash:5].js",
     }

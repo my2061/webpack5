@@ -1,19 +1,19 @@
 import handler from "./handler"
 
-await new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        resolve(1);
-    }, 1000)
-}).then(data=>{
-    console.log(data);
-})
+// await new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         resolve(1);
+//     }, 1000)
+// }).then(data=>{
+//     console.log(data);
+// })
 
-// const init = () => {
-//     const result = handler.handler1();
-//     console.log("init" + result);
-// }
+const init = () => {
+    const result = handler.handler1();
+    console.log("init" + result);
+}
 
-// init();
+init();
 
 // import gif from "../assets/123.gif";
 // import png from "../assets/456.png";
