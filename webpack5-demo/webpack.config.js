@@ -1,8 +1,14 @@
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const path = require("path");
+
 module.exports = {
-    mode: "development",
+    mode: "production",
+    cache: {
+        type: "filesystem", //缓存到内存还是硬盘中 默认为内存memory
+        cacheDirectory: path.resolve(__dirname, '.temp_cache'), //缓存保存的位置
+    },
     output: {
         filename: "[name].[hash:5].js",
 				clean: true,
